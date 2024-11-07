@@ -1,83 +1,111 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio I Wayan Mulawarman Restumurti</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <h1>I Wayan Mulawarman Restumurti</h1>
-      <p>
-        Mahasiswa Sistem Informasi | Course Assistant at LePKom | Wakil Ketua
-        UKM Hindu
-      </p>
+    <header class="header">
+      <a href="#" class="logo">iwrmt</a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+      </nav>
+
+      <a href="#contact" class="contact">Contact Me</a>
     </header>
 
-    <!-- About Me Section -->
-    <section>
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya adalah mahasiswa Sistem Informasi yang memiliki ketertarikan dalam
-        pengembangan TI, khususnya dalam analisis data dan desain basis data.
-        Selain itu, saya aktif di berbagai organisasi dan kegiatan yang
-        mendukung pengalaman saya di bidang kepemimpinan.
-      </p>
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="home-text">
+          <h3>Hi</h3>
+          <h1>I'm <span>Restu</span></h1>
+          <h1>a Data Scientist</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            ullam dolore animi ab veritatis veniam aliquam deserunt odio
+            laboriosam vel, nulla, sequi cum asperiores similique, quasi
+            cupiditate obcaecati at accusantium!
+          </p>
+          <div class="btn-box">
+            <button class="btn-1">Hire Me</button>
+            <button class="btn-2">Experience</button>
+          </div>
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="fotoganteng.jpg" alt="" />
+      </div>
     </section>
-
-    <!-- Projects Section -->
-    <section>
-      <h2>Proyek Saya</h2>
-
-      <h3>1. Visualisasi dan Analisis Data Lagu di Spotify 2023</h3>
-      <p>
-        Proyek ini bertujuan untuk memberikan wawasan terkait tren musik di
-        Spotify berdasarkan data pada tahun 2023. Analisis dilakukan dengan
-        fokus pada data stream per artis.
-      </p>
-
-      <h3>2. Organisasi Event: PKKMB UKM Hindu Gunadarma 2023</h3>
-      <p>
-        Menyusun dan mempresentasikan materi yang mencakup sejarah, kegiatan,
-        dan sesi kuis interaktif dengan hadiah untuk memperkenalkan UKM Hindu
-        kepada mahasiswa baru.
-      </p>
-
-      <h3>3. Kalkulator Segitiga</h3>
-      <p>
-        Menerapkan algoritma matematika seperti menghitung luas dan keliling
-        segitiga dalam teknologi web
-      </p>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="fotoganteng2.JPG" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Data <span>Analyst</span></h3>
+        <p>
+          I am an undergraduate student majoring in Information Systems with a
+          strong passion for technology. My enthusiasm for the tech field drives
+          me to continuously expand my knowledge and skills. I am eager to learn
+          more and delve deeper into the areas that interest me, particularly as
+          they relate to the ever-evolving landscape of technology. Being a
+          committed and driven person, I'm prepared to take on new tasks and
+          chances that will deepen my knowledge and experience in this
+          ever-changing field.
+        </p>
+        <a href="#" class="btn-2">Experience</a>
+      </div>
     </section>
-
-    <!-- Skills Section -->
-    <section>
-      <h2>Keahlian</h2>
-      <ul>
-        <li>Analisis Data</li>
-        <li>Desain Basis Data</li>
-        <li>Kepemimpinan & Organisasi</li>
-        <li>Java & Pemrograman Dasar</li>
-        <li>Komunikasi</li>
+    <section class="contact-form" id="contact">
+      <h2 class="contact-me">Contact <span>Me</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <input type="submit" value="Send Message" class="btn-1" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Education</a>
+        </li>
       </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section>
-      <h2>Kontak</h2>
-      <p>Email: iwayanrestumurti33@gmail.com</p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/i-wayan-restu"
-          >linkedin.com/in/i-wayan-restu</a
-        >
-      </p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>© 2024 I Wayan Mulawarman Restumurti. All rights reserved.</p>
+      <p class="copyrights">© 2024 Restu | All Rights Reserved</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
