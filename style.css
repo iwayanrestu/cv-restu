@@ -38,6 +38,9 @@
 body {
   background: rgb(241, 241, 241);
 }
+.navbar {
+  display: flex;
+}
 
 .navbar a {
   font-size: 18px;
@@ -67,6 +70,7 @@ body {
   letter-spacing: 1px;
   font-weight: 600;
   transition: 0.3s ease;
+  margin-right: 30px;
 }
 
 .contact:hover {
@@ -286,6 +290,54 @@ footer ul li a {
   color: white;
 }
 
+/* Hamburger */
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+.open-menu {
+  top: 38%;
+  right: 35px;
+  transform: translate(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {
+  display: none;
+}
+@media (max-width: 610px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar a {
+    margin-top: 40px;
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .navbar {
+    right: 0;
+  }
+}
+
 /* Style for Education Section */
 .education {
   width: 100%;
@@ -418,175 +470,4 @@ footer ul li a {
   color: #999;
   display: block;
   margin-top: 5px;
-}
-
-/* Media Query for Tablets and Smaller Screens */
-@media (max-width: 1024px) {
-  .header {
-    padding: 20px 8%;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  .navbar a {
-    font-size: 16px;
-    margin: 0 15px;
-  }
-
-  .home-content h1 {
-    font-size: 48px;
-  }
-
-  .home-content h3 {
-    font-size: 36px;
-  }
-
-  .about-img img,
-  .img-box img {
-    width: 450px;
-  }
-
-  .education,
-  .projects {
-    padding: 20px 8%;
-  }
-
-  .education h2,
-  .projects h2 {
-    font-size: 32px;
-  }
-}
-
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 20px 5%;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .contact {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-
-  .home-content h1 {
-    font-size: 36px;
-  }
-
-  .home-content h3 {
-    font-size: 28px;
-  }
-
-  .img-box img,
-  .about-img img {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .education-item,
-  .project-item {
-    padding-left: 40px;
-  }
-
-  .timeline-dot {
-    left: 10px;
-  }
-
-  .timeline-line {
-    left: 17px;
-  }
-
-  .education-content h3,
-  .project-content h3 {
-    font-size: 20px;
-  }
-
-  .education-content p,
-  .project-content p {
-    font-size: 14px;
-  }
-
-  .education-content span,
-  .project-content span {
-    font-size: 12px;
-  }
-}
-
-/* Media Query for Small Mobile Devices */
-@media (max-width: 480px) {
-  .header {
-    padding: 15px 5%;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .navbar a {
-    font-size: 14px;
-  }
-
-  .home-content h1 {
-    font-size: 28px;
-  }
-
-  .home-content h3 {
-    font-size: 22px;
-  }
-
-  .btn-1,
-  .btn-2 {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-
-  .education,
-  .projects {
-    padding: 20px 5%;
-  }
-
-  .education h2,
-  .projects h2 {
-    font-size: 28px;
-  }
-
-  .education-item,
-  .project-item {
-    padding-left: 30px;
-  }
-
-  .timeline-dot {
-    left: 5px;
-    width: 12px;
-    height: 12px;
-  }
-
-  .timeline-line {
-    left: 11px;
-    width: 1px;
-  }
-
-  .education-content h3,
-  .project-content h3 {
-    font-size: 18px;
-  }
-
-  .education-content p,
-  .project-content p {
-    font-size: 12px;
-  }
-
-  .education-content span,
-  .project-content span {
-    font-size: 10px;
-  }
 }
