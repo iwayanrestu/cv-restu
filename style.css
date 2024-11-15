@@ -179,7 +179,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 10px;
   gap: 10em;
   background: black;
   position: relative;
@@ -187,7 +187,6 @@ span {
   width: 100vw; /* Menyebarkan section selebar viewport */
   height: 100vh; /* Menjaga section setinggi layar */
   box-sizing: border-box;
-  margin: 0; /* Menghilangkan margin */
 }
 
 .about-content h2 {
@@ -209,7 +208,7 @@ span {
 /* Contact Form*/
 .contact-form {
   padding: 10px;
-  margin-top: 700px;
+  margin-top: 50px;
 }
 .contact-form h2 {
   text-align: center;
@@ -454,7 +453,7 @@ footer ul li a {
   display: block;
   margin-top: 5px;
 }
-@media (max-width: 610px) {
+@media (max-width: 772px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -480,13 +479,12 @@ footer ul li a {
     right: 0;
   }
 
-  .about-img img {
-    display: none;
-  }
   .home {
     display: flex;
     flex-direction: column; /* Mengubah flex direction menjadi kolom */
     width: 100%;
+    margin-top: 180px;
+    gap: 10%;
   }
 
   .img-box {
@@ -496,7 +494,7 @@ footer ul li a {
     justify-content: center;
   }
   .img-box img {
-    width: 300px;
+    width: 350px;
   }
   .home-content {
     width: 100%;
@@ -517,5 +515,60 @@ footer ul li a {
   }
   .about-img img {
     width: 300px; /* Sesuaikan ukuran gambar pada layar kecil */
+  }
+}
+@media (min-width: 772px) and (max-width: 1210px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar a {
+    margin-top: 40px;
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .navbar {
+    right: 0;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column; /* Mengubah flex direction menjadi kolom */
+    width: 100%;
+    margin-top: 180px;
+    gap: 10%;
+  }
+
+  .img-box {
+    order: -1; /* Menempatkan gambar di bagian atas */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .img-box img {
+    width: 480px;
+  }
+  .home-content {
+    width: 100%;
+  }
+
+  .home-text {
+    padding: 20px;
+  }
+
+  .about {
+    width: 100%;
   }
 }
