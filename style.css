@@ -95,7 +95,7 @@ body {
   align-items: center;
   gap: 7em;
 
-  padding: 30px 12% 0;
+  padding: 30px 9% 0;
 }
 
 .home-content {
@@ -208,7 +208,6 @@ span {
 /* Contact Form*/
 .contact-form {
   padding: 10px;
-  margin-top: 50px;
 }
 .contact-form h2 {
   text-align: center;
