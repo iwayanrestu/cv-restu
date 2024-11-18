@@ -20,7 +20,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 35px 12%;
+  padding: 20px 12%;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   display: flex;
@@ -68,7 +68,7 @@ body {
 }
 
 .contact {
-  padding: 10px 20px;
+  padding: 5px 15px;
   background-color: white;
   color: black;
   border: 2px solid transparent;
@@ -307,7 +307,7 @@ footer ul li a {
   display: none;
 }
 .open-menu {
-  top: 38%;
+  top: 28%;
   right: 35px;
   transform: translate(-50%);
 }
